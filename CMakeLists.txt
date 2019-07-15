@@ -10,3 +10,7 @@ file(GLOB_RECURSE openfst_src openfst-1.7.2/src/lib/*.cc)
 add_executable(fst_example
         main.cxx
         ${openfst_src})
+
+add_executable(fst_dic
+        dic.cxx
+        ${openfst_src})
