@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.11.2)
 project(fst_example)
 
 set(CMAKE_CXX_STANDARD 11)
@@ -13,4 +13,8 @@ add_executable(fst_example
 
 add_executable(fst_dic
         dic.cxx
+        ${openfst_src})
+
+add_executable(fst_dic2
+        dic2.cxx
         ${openfst_src})
